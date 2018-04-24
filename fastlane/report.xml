@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: git_checkout" time="0.296995">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: git_add" time="0.087496">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: git_commit_hm" time="0.067552">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: push_to_git_remote" time="19.177044">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: git_checkout" time="0.092333">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: pull_to_git_remote" time="1.84846">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: git_merge" time="0.154373">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: git_add" time="0.150298">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: git_commit_hm" time="0.052183">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: push_to_git_remote" time="1.924948">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: git_checkout" time="0.134677">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: git_merge" time="0.189033">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: push_to_git_remote" time="1.856603">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,54 @@
+desc "提交合并代码"
+
+lane :doit do |options|
+
+myBranch = options[:fr]
+originBranch        = options[:to]
+desc         = options[:m]
+
+git_checkout(branch:myBranch)
+
+git_add(path: ".") # git add .
+
+git_commit_hm(desc:desc)
+
+push_to_git_remote(
+  remote: "origin",         # optional, default: "origin"
+  local_branch: myBranch,  # optional, aliased by "branch", default: "master"
+  force: false,    # optional, default: false
+  tags: false     # optional, default: true
+)
+
+git_checkout(branch:originBranch)
+
+pull_to_git_remote(
+  remote: "origin",         # optional, default: "origin"
+  branch: originBranch # optional, default is set to local_branch
+)
+
+git_merge(branch:myBranch)
+
+git_add(path: ".") # git add .
+
+git_commit_hm(desc:"提交合并代码")
+
+push_to_git_remote(
+  remote: "origin",         # optional, default: "origin"
+  remote_branch: originBranch, # optional, default is set to local_branch
+  force: false,    # optional, default: false
+  tags: false     # optional, default: true
+)
+
+git_checkout(branch:myBranch)
+
+git_merge(branch:originBranch)
+
+push_to_git_remote(
+  remote: "origin",         # optional, default: "origin"
+  remote_branch: myBranch, # optional, default is set to local_branch
+  force: false,    # optional, default: false
+  tags: false     # optional, default: true
+)
+
+end
+
