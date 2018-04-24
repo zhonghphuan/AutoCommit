@@ -40,7 +40,7 @@ m:参数(描述)
 
 	fastlane/report.xml
   
-        fastlane/Preview.html
+	fastlane/Preview.html
   
 	fastlane/screenshots
   
