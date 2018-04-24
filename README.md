@@ -2,7 +2,7 @@
 Fastlane自动提交合并代码
 >平常在公司用git提交代码好几行命令,敲都敲吐了,用sourceTree工具切换提交也点吐了.就随手用fastlane写了一个自动化脚本,在自己分支一键提交后将代码合并到远程仓库再切回自己分支.
 
-执行:fastlane doit fr:ZH to:2.4 m:'xxxx'
+执行:fastlane doit fr:xx to:xx m:'xxxx'
 
 效果:
 
@@ -40,7 +40,7 @@ m:参数(描述)
 
 	fastlane/report.xml
   
-  fastlane/Preview.html
+        fastlane/Preview.html
   
 	fastlane/screenshots
   
