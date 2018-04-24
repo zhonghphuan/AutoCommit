@@ -22,7 +22,7 @@ m:参数(描述)
 
 示例:从自己dev分支往远程master分支提交合并代码,只需:fastlane doit fr:dev to:master m:’xxxx’
 
-安装fastlane:
+一.安装fastlane:
 
 1.确保安装ruby:ruby -v
 
@@ -32,7 +32,7 @@ m:参数(描述)
 
 4.查看版本:fastlane --version
 
-如何使用自动化提交代码脚本:
+二.如何使用自动化提交代码脚本:
 
 1.将脚本文件夹拖入到项目主目录下
 
